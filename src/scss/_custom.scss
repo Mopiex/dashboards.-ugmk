@@ -1,0 +1,90 @@
+// Here you can add other styles
+
+.body_blocked {
+   overflow: hidden;
+}
+
+li.c-sidebar-nav-item:nth-last-of-type(2) > .c-sidebar-nav-link,
+li.c-sidebar-nav-item:nth-last-of-type(3) > .c-sidebar-nav-link,
+li.c-sidebar-nav-item:nth-last-of-type(4) > .c-sidebar-nav-link,
+li.c-sidebar-nav-item:nth-last-of-type(5) > .c-sidebar-nav-link {
+   display: block;
+   padding-left: 56px !important;
+}
+
+.langChoose {
+   display: flex;
+   align-items: baseline;
+   margin: 0 -10px;
+   font-weight: bold;
+   padding: 20px;
+   padding-right: 32px;
+
+   span {
+      margin: 0 10px;
+      cursor: pointer;
+
+      &.active {
+         color: orange;
+      }
+   }
+}
+
+.addChartBtn {
+   color: #fff;
+   background-color: #321fdb;
+   padding: 10px;
+   font-size: 1rem;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+   @media(min-width: 600px) {
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+   }
+}
+
+.chartTitle {
+   width: 100%;
+   border: none;
+   font-size: 1rem;
+
+   &:focus {
+      outline: none;
+   }
+}
+
+.cloudDownloadBtnGroup {
+   display: flex !important;
+   flex-direction: column !important;
+   align-items: flex-end !important;
+}
+
+.btn {
+   padding: 3px 6px !important;
+}
+
+.chartTypeSelect {
+   width: 99%;
+   font-size: .8rem;
+   margin-top: 10px;
+}
+
+.itemTitle {
+   width: 100%;
+   border: none;
+   font-size: .9rem;
+ 
+   &:focus {
+      outline: none;
+   }
+}
+
+@media (max-width: 576px) {
+   .formTitle {
+      font-size: 1.8rem;
+   }
+}
+
