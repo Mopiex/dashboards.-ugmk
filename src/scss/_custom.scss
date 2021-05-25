@@ -38,12 +38,25 @@ li.c-sidebar-nav-item:nth-last-of-type(5) > .c-sidebar-nav-link {
 }
 
 .grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   display: flex;
+   flex-wrap: wrap;   
+}
 
-   @media(min-width: 600px) {
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+.grid > div {
+   flex: 1 0 100%;
+   overflow: hidden;
+
+   @media(min-width: 768px) {
+      flex: 1 0 50%;
    }
+
+   @media(min-width: 992px) {
+      flex: 1 0 33.333%;
+   }
+}
+
+canvas {
+   height: 245px !important;
 }
 
 .chartTitle {

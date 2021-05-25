@@ -156,7 +156,8 @@ const MainChartExample = attributes => {
           options={{
             tooltips: {
               enabled: true
-            }
+            },
+            maintainAspectRatio: false
           }}
           labels="months"
         /> : attributes.charttype === 'chart-bar' ? <CChartBar
@@ -171,7 +172,8 @@ const MainChartExample = attributes => {
           options={{
             tooltips: {
               enabled: true
-            }
+            },
+            maintainAspectRatio: false
           }}
           labels={['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', /* 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su' */]}
         /> : attributes.charttype === 'chart-pie' ? <CChartPie
@@ -192,7 +194,8 @@ const MainChartExample = attributes => {
           options={{
             tooltips: {
               enabled: true
-            }
+            },
+            maintainAspectRatio: false
           }}
         /> : attributes.charttype === 'chart-radar' ? <CChartRadar
           {...attributes}
@@ -225,7 +228,8 @@ const MainChartExample = attributes => {
             aspectRatio: 1.5,
             tooltips: {
               enabled: true
-            }
+            },
+            maintainAspectRatio: false
           }}
           labels={[
             'Eating', 'Drinking', 'Sleeping', 'Designing',
@@ -248,7 +252,8 @@ const MainChartExample = attributes => {
           options={{
             tooltips: {
               enabled: true
-            }
+            },
+            maintainAspectRatio: false
           }}
         /> : attributes.charttype === 'chart-polar-area' ? <CChartPolarArea
           {...attributes}
@@ -273,7 +278,8 @@ const MainChartExample = attributes => {
           options={{
             tooltips: {
               enabled: true
-            }
+            },
+            maintainAspectRatio: false
           }}
         />
       }
